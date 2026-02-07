@@ -19,10 +19,21 @@ The application exposes a basic API endpoint to confirm that the service is runn
 
 ---
 
+## Deployment Process
+
+1. Created an AWS account using the Free Tier.
+2. Initialized an Elastic Beanstalk Python environment.
+3. Configured dependencies using requirements.txt and application startup using Procfile.
+4. Deployed the Django REST API to AWS Elastic Beanstalk.
+5. Verified deployment using the public Elastic Beanstalk URL.
+6. Tested API endpoints using Postman.
+
+---
+
 ## API Functionality
 The API provides a simple health check endpoint:
 
-GET /api/health/
+`GET /api/health/`
 
 **Response:**
 ```json
@@ -33,12 +44,3 @@ GET /api/health/
 This endpoint verifies that the application is deployed correctly and accessible from the internet.
 
 ---
-
-## Deployment Process
-
-1. Created an AWS account using the Free Tier.
-2. Initialized an Elastic Beanstalk Python environment.
-3. Configured dependencies using requirements.txt and application startup using Procfile.
-4. Deployed the Django REST API to AWS Elastic Beanstalk.
-5. Verified deployment using the public Elastic Beanstalk URL.
-6. Tested API endpoints using Postman.
