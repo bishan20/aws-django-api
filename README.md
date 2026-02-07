@@ -41,6 +41,3 @@ The API provides a simple health check endpoint:
   "message": "API is working!"
 }
 
-This endpoint verifies that the application is deployed correctly and accessible from the internet.
-
----
